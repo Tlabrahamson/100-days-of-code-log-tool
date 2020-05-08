@@ -1,38 +1,104 @@
-.App {
+:root {
+  --transition: all 0.4s ease;
+  --container-padding: 25px 50px;
+  --spacer: 100px 0;
+  --small-spacer: 50px 0;
+  --hover-color: #00909e;
+  --font-color: #dae1e7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#27496d, #142850);
+  color: var(--font-color);
+}
+
+h1 {
   text-align: center;
+  padding: var(--container-padding);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.countdown-container {
+  text-align: center;
+  padding: var(--container-padding);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.countdown-container h2 {
+  margin: var(--small-spacer);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.the-counter {
+  font-size: 48px;
+}
+
+.countdown-button {
+  border: solid 3px var(--hover-color);
+  border-radius: 10px;
+  color: var(--hover-color);
+  cursor: pointer;
+  font-size: 24px;
+  margin: var(--small-spacer);
+  width: 120px;
+  height: 60px;
+  outline: none;
+  transition: var(--transition);
+}
+
+.countdown-button:hover {
+  background: var(--hover-color);
+  color: var(--font-color);
+}
+
+.log-container {
+  padding: var(--container-padding);
+}
+
+.log-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  max-width: 20vw;
 }
 
-.App-link {
-  color: #61dafb;
+.log-form p {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--small-spacer);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.log-form label {
+  margin-right: 10px;
+}
+
+.log-form label,
+input {
+  font-size: 24px;
+}
+
+.log-form input {
+  border: solid 3px var(--hover-color);
+  border-radius: 3px;
+}
+
+.log-form button {
+  border: solid 3px var(--hover-color);
+  border-radius: 10px;
+  color: var(--hover-color);
+  cursor: pointer;
+  font-size: 24px;
+  margin: var(--small-spacer);
+  width: 120px;
+  height: 60px;
+  outline: none;
+  transition: var(--transition);
+}
+
+.log-form button:hover {
+  background: var(--hover-color);
+  color: var(--font-color);
 }
