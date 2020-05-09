@@ -1,3 +1,16 @@
+### 100 Days of code log tool
+
+This project is not quite complete but you can time yourself for a full hour of coding time and then type your progress in the form below.
+
+### Functionality that still needs to be implemented:
+
+- A message when the countdown is completed.
+
+- A button to copy the log text from the modal.
+
+- There is always more you can do. Just gotta know when it's gone too far.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -36,15 +49,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-##100 Days of code log tool
-
-This project is not quite complete but you can time yourself for a full hour of coding time and then type your progress in the form below.
-
-##Functionality that still needs to be implemented:
-
-- A message when the countdown is completed.
-
-- A button to copy the log text from the modal.
-
-- There is always more you can do. Just gotta know when it's gone too far.
