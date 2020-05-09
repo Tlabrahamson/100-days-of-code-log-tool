@@ -1,4 +1,4 @@
-### 100 Days of code log tool
+## 100 Days of code log tool
 
 This project is not quite complete but you can time yourself for a full hour of coding time and then type your progress in the form below.
 
