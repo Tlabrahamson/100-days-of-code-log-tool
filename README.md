@@ -4,12 +4,9 @@ This project is not quite complete but you can time yourself for a full hour of 
 
 ### Functionality that still needs to be implemented:
 
-- A message when the countdown is completed.
-
-- A button to copy the log text from the modal.
+- May add a few more bells and whistles/polish.
 
 - There is always more you can do. Just gotta know when it's gone too far.
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
