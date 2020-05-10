@@ -112,7 +112,7 @@ const Log = () => {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button color="primary" onClick={(copyToClipboard, handleClickOpen)}>
+          <Button color="primary" onClick={copyToClipboard}>
             Copy
           </Button>
           <Button onClick={handleClose} color="primary">
