@@ -36,6 +36,12 @@ const Log = () => {
   const d = date.getDate();
   const y = date.getFullYear();
 
+  const copyToClipboard = () => {
+    const logContent = document.querySelector(".log-content");
+    logContent.select();
+    document.execCommand("copy");
+  };
+
   return (
     <div className="log-container">
       <h2>Log entry:</h2>
@@ -93,20 +99,22 @@ const Log = () => {
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            ### Day {day}: {m} {d}, {y}
-            <br />
-            <br />
-            **Today's Progress:** {progress}
-            <br />
-            <br />
-            **Thoughts:** {thoughts}
-            <br />
-            <br />
-            **Link to work:** {link}
+            <textarea
+              className="log-content"
+              value={`### Day ${day}: ${m} ${d}, ${y}
+
+**Today's Progress:** ${progress}
+            
+**Thoughts:** ${thoughts}
+            
+**Link to work:** ${link}`}
+            />
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button color="primary">Copy</Button>
+          <Button color="primary" onClick={(copyToClipboard, handleClickOpen)}>
+            Copy
+          </Button>
           <Button onClick={handleClose} color="primary">
             Got it!
           </Button>

@@ -5,7 +5,7 @@ const Countdown = () => {
   const [minutes, setMinutes] = useState(59);
   const [seconds, setSeconds] = useState(59);
   const [isActive, setIsActive] = useState(false);
-
+  //Removes a minute from the count after every 60000 milliseconds
   useEffect(() => {
     let interval = null;
     if (isActive) {
@@ -17,7 +17,7 @@ const Countdown = () => {
     }
     return () => clearInterval(interval);
   }, [isActive, minutes]);
-
+  //Removes a second from the count after every 1000 milliseconds
   useEffect(() => {
     let interval = null;
     if (isActive) {
@@ -45,13 +45,11 @@ const Countdown = () => {
   return (
     <div className="countdown-container">
       <h2>Start your hour:</h2>
-      {seconds < 10 ? (
-        <h3 className="the-counter">
-          {minutes}:0{seconds}
-        </h3>
+      {minutes < 0 ? (
+        <h3 className="the-counter">That's a wrap!</h3>
       ) : (
         <h3 className="the-counter">
-          {minutes}:{seconds}
+          {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
         </h3>
       )}
       <button className="countdown-button" onClick={handleClick}>

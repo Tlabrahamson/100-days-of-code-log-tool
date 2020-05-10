@@ -106,3 +106,8 @@ textarea {
   background: var(--hover-color);
   color: var(--font-color);
 }
+
+.log-content {
+  width: 30vw;
+  height: 50vh;
+}
